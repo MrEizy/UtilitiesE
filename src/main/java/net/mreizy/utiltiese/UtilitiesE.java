@@ -27,6 +27,7 @@ import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegistryObject;
+import net.mreizy.utiltiese.item.ModCreativeModTabs;
 import net.mreizy.utiltiese.item.ModItems;
 import org.slf4j.Logger;
 
@@ -39,6 +40,8 @@ public class UtilitiesE {
 
     public UtilitiesE() {
         IEventBus modEventBus = FMLJavaModLoadingContext.get().getModEventBus();
+
+        ModCreativeModTabs.register(modEventBus);
 
         ModItems.register(modEventBus);
 
