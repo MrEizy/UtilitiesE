@@ -8,6 +8,7 @@ import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.RegistryObject;
 import net.mreizy.utiltiese.UtilitiesE;
+import net.mreizy.utiltiese.block.ModBlocks;
 
 public class ModCreativeModTabs {
     public static final DeferredRegister<CreativeModeTab> CREATIVE_MODE_TABS =
@@ -18,6 +19,8 @@ public class ModCreativeModTabs {
                     .title(Component.translatable("creativetab.utilitiese_tab"))
                     .displayItems((pParameters, pOutput) -> {
                         pOutput.accept(ModItems.RUBY.get());
+
+                        pOutput.accept(ModBlocks.RUBY_BLOCK.get());
                     })
                     .build());
 
