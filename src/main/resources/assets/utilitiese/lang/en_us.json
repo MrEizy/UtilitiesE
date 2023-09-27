@@ -1,8 +1,11 @@
 {
   "item.utilitiese.ruby": "Ruby",
+  "item.utilitiese.cooked_apple": "Cooked Apple",
+  "item.utilitiese.fire_shard": "Fire Shard",
 
   "block.utilitiese.ruby_block": "Block of Ruby",
   "block.utilitiese.deepslate_ruby_ore": "Deepslate Ruby Ore",
+  "block.utilitiese.netherrack_fire_shard_ore": "Nether Fire Shard Ore",
 
   "creativetab.utilitiese_tab": "UtilitiesE"
 }

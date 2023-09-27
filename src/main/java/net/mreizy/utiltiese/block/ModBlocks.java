@@ -25,7 +25,10 @@ public class ModBlocks {
             () -> new Block(BlockBehaviour.Properties.copy(Blocks.IRON_BLOCK).sound(SoundType.AMETHYST)));
     public static final RegistryObject<Block> DEEPSLATE_RUBY_ORE = registerBlock("deepslate_ruby_ore",
             () -> new DropExperienceBlock(BlockBehaviour.Properties.copy(Blocks.DEEPSLATE)
-                    .strength(3).requiresCorrectToolForDrops(), UniformInt.of(3, 8)));
+                    .strength(3).requiresCorrectToolForDrops(), UniformInt.of(3, 6)));
+    public static final RegistryObject<Block> NETHERRACK_FIRE_SHARD_ORE = registerBlock("netherrack_fire_shard_ore",
+            () -> new DropExperienceBlock(BlockBehaviour.Properties.copy(Blocks.NETHERRACK)
+                    .strength(3).requiresCorrectToolForDrops(), UniformInt.of(4, 9)));
 
     private static <T extends Block> RegistryObject<T> registerBlock(String name, Supplier<T> block) {
         RegistryObject<T> toReturn = BLOCKS.register(name, block);

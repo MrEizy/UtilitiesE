@@ -19,9 +19,13 @@ public class ModCreativeModTabs {
                     .title(Component.translatable("creativetab.utilitiese_tab"))
                     .displayItems((pParameters, pOutput) -> {
                         pOutput.accept(ModItems.RUBY.get());
+                        pOutput.accept(ModItems.FIRE_SHARD.get());
 
                         pOutput.accept(ModBlocks.RUBY_BLOCK.get());
                         pOutput.accept(ModBlocks.DEEPSLATE_RUBY_ORE.get());
+                        pOutput.accept(ModBlocks.NETHERRACK_FIRE_SHARD_ORE.get());
+
+                        pOutput.accept(ModItems.COOKED_APPLE.get());
                     })
                     .build());
 
